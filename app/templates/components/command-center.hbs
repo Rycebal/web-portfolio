@@ -1,76 +1,37 @@
 <div class="whole-page">
-  <!-- Full Page Image Background Carousel Header -->
-  <div id="myCarousel" class="carousel slide">
-        <!-- Indicators -->
-        <div class="navbar-header">
-            {{!-- <a class="navbar-brand" href="#">Brand</a> --}}
-            <ol class="carousel-indicators selections">
-                <li data-target="#myCarousel" data-slide-to="0" class="active">About</li>
-                <li data-target="#myCarousel" data-slide-to="1" class="">Education</li>
-                <li data-target="#myCarousel" data-slide-to="2" class="">Experience</li>
-                <li data-target="#myCarousel" data-slide-to="3" class="">Skills</li>
-                <li data-target="#myCarousel" data-slide-to="4" class="">Contact</li>
-                {{!-- <button type="submit" {{action "clickers"}}>clicks</button> --}}
-            </ol>
+    <div>
+    <div id='menu'>
+        <a class="active" href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </div>
+    {{#full-page navigation='true' anchors='["about", "education", "experience", "skills", "contact"]' scrollingSpeed='500'}}
+        
+        <div data-menuanchor="about" class="section">
+            <h2 class="animated fadeInLeft">Bryce Palmer</h2>
+            <p class="animated fadeInLeft">Hi there, I'm Bryce, the developer of this website. I am {{myAge}} years old, with a BS degree in Computer Science from 
+                                        Weber State University. My passion is for Web Development, though I have skills in many other areas. I have a few other 
+                                        interests as well, some of which being snowboarding, golfing, hockey, and my pup. </p>
         </div>
-        <!-- Wrapper for Slides -->
-        <div class="carousel-inner" data-interval="false">
-            <div class="item active">
-                <div class="fill wood-pic"></div>
-                <div class="carousel-caption">
-                     <h2 class="animated fadeInLeft">Bryce Palmer</h2>
-                     <p class="animated fadeInLeft">Hi there, I'm Bryce, the developer of this website. I am {{myAge}} years old, with a BS degree in Computer Science from 
-                                                    Weber State University. My passion is for Web Development, though I have skills in many other areas. I have a few other 
-                                                    interests as well, some of which being snowboarding, golfing, hockey, and my pup. </p>
-                     {{!-- {{page-content/skills-component from=from}} --}}
-                                                    
-                     {{!-- <p class="animated fadeInUp"><a href="#" class="btn btn-transparent btn-rounded btn-large">Learn More</a></p> --}}
-                </div>
-            </div>
-            <div class="item">
-                <div class="fill wsu-pic"></div>
-                <div class="carousel-caption">
-                     <h2 class="animated fadeInDown">Education</h2>
-                     <p class="animated fadeInUp">Bachelors degree from Weber State University in Spring 2017</p>
-                     {{!-- <p class="animated fadeInUp"><a href="#" class="btn btn-transparent btn-rounded btn-large">Learn More</a></p> --}}
-                </div>
-            </div>
-            <div class="item">
-                <div class="fill skills-pic"></div>
-                <div class="carousel-caption">
-                     <h2 class="animated fadeInRight">Experience</h2>
-                     <p class="animated fadeInRight">Almost 2 years at RevelTV as a Jr Software Developer</p>
-                     {{!-- <p class="animated fadeInRight"><a href="#" class="btn btn-transparent btn-rounded btn-large">Learn More</a></p> --}}
-                </div>
-            </div>
-            <div class="item">
-                <div class="fill"></div>
-                <div class="carousel-caption">
-                     <h2 class="animated fadeInUp">Skills</h2>
-                     {{!-- <p class="animated fadeInDown">Ember.js, HTML, CSS, JavaScript, Java, Python, etc.</p> --}}
-                     {{!-- {{#if (eq slide 3)}} --}}
-                        {{page-content/skills-component}}
-                     {{!-- {{/if}} --}}
-                     {{!-- <p class="animated fadeInUp"><a href="#" class="btn btn-transparent btn-rounded btn-large">Learn More</a></p> --}}
-                </div>
-            </div>
-            <div class="item">
-                <div class="fill work-pic"></div>
-                <div class="carousel-caption">
-                     <h2 class="animated fadeInLeft">Contact</h2>
-                     <p class="animated fadeInRight">801-628-7083 or brympal@gmail.com</p>
-                     {{!-- <p class="animated fadeInRight"><a href="#" class="btn btn-transparent btn-rounded btn-large">Learn More</a></p> --}}
-                </div>
-            </div>
+        <div data-menuanchor="education" class="section">
+            <h2 class="animated fadeInDown">Education</h2>
+            <p class="animated fadeInUp">Bachelors degree from Weber State University in Spring 2017</p>
         </div>
-
-        <!-- Controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev" data-interval="false">
-            <span class="icon-prev"></span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next" data-interval="false">
-            <span class="icon-next"></span>
-        </a>
+        <div data-menuanchor="experience" class="section">
+            <h2 class="animated fadeInRight">Experience</h2>
+            <p class="animated fadeInRight">Almost 2 years at RevelTV as a Jr Software Developer</p>
+        </div>
+        <div data-menuanchor="skills" class="section">
+            <h2 class="animated fadeInUp">Skills</h2>
+            {{page-content/skills-component}}
+        </div>
+        <div data-menuanchor="contact" class="section">
+            <h2 class="animated fadeInLeft">Contact</h2>
+            <p class="animated fadeInRight">801-628-7083 or brympal@gmail.com</p>
+        </div>
+    {{/full-page}}
 
     </div>
 
