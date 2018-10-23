@@ -1,33 +1,34 @@
 <div class="whole-page">
-    <div>
-    <div id='menu'>
-        <a class="active" href="#about">About</a>
-        <a href="#education">Education</a>
-        <a href="#experience">Experience</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-    </div>
-    {{#full-page navigation='true' anchors='["about", "education", "experience", "skills", "contact"]' scrollingSpeed='500'}}
+    <div id='app'>
+    <ul id='menu' class="active">
+        <li data-menuanchor="about" class="active"><a href="#about">About</a></li>
+        <li data-menuanchor="education"><a href="#education">Education</a></li>
+        <li data-menuanchor="experience"><a href="#experience">Experience</a></li>
+        <li data-menuanchor="skills"><a href="#skills">Skills</a></li>
+        <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
+    </ul>
+    {{#full-page navigation='false' anchors='["about", "education", "experience", "skills", "contact"]' 
+        scrollingSpeed='500'}}
         
-        <div data-menuanchor="about" class="section">
+        <div class="section active">
             <h2 class="animated fadeInLeft">Bryce Palmer</h2>
             <p class="animated fadeInLeft">Hi there, I'm Bryce, the developer of this website. I am {{myAge}} years old, with a BS degree in Computer Science from 
                                         Weber State University. My passion is for Web Development, though I have skills in many other areas. I have a few other 
                                         interests as well, some of which being snowboarding, golfing, hockey, and my pup. </p>
         </div>
-        <div data-menuanchor="education" class="section">
+        <div class="section">
             <h2 class="animated fadeInDown">Education</h2>
             <p class="animated fadeInUp">Bachelors degree from Weber State University in Spring 2017</p>
         </div>
-        <div data-menuanchor="experience" class="section">
+        <div class="section">
             <h2 class="animated fadeInRight">Experience</h2>
             <p class="animated fadeInRight">Almost 2 years at RevelTV as a Jr Software Developer</p>
         </div>
-        <div data-menuanchor="skills" class="section">
+        <div class="section">
             <h2 class="animated fadeInUp">Skills</h2>
             {{page-content/skills-component}}
         </div>
-        <div data-menuanchor="contact" class="section">
+        <div class="section">
             <h2 class="animated fadeInLeft">Contact</h2>
             <p class="animated fadeInRight">801-628-7083 or brympal@gmail.com</p>
         </div>

@@ -4,9 +4,6 @@ export default Component.extend({
     init() {
         this._super(...arguments);
         this.send('calculateAge', '08/30/1994'); // Call action and send my Birthday
-        console.log(window.jQuery.fn.jquery);
-        console.log('The page variable', page)
-        this.set('page', 3);
     },
 
     slide: 0,
@@ -31,28 +28,5 @@ export default Component.extend({
             }
             that.set('myAge', tempAge);
         },
-
-        clickers() {
-            console.log('Clicked, page is', page);
-        },
-
-        // setIt() {
-        //     this.set('slide', page)
-        // }
     }
-});
-
-var page = 0;
-
-$(document).ready(function(){
-    // $('#myCarousel').bind('slide.bs.carousel', function (e) {
-    //     console.log('Slide', $('#myCarousel .active').index('#myCarousel .item'));
-    // });
-
-    $('#myCarousel').on('slid.bs.carousel', function (e) {
-        var active = $(e.target).find('.carousel-inner > .item.active');
-        page = active.index();
-        // setIt();
-        console.log('page', page);
-    });
 });
