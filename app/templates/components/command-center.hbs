@@ -1,20 +1,22 @@
 <div class="whole-page">
+    {{!-- <a id="topLeftTitle">{{myAge}}</a> --}}
     <div id='app'>
-    <ul id='menu' class="active">
+    <ul id="menu" class="active">
+    <img src="{{rootURL}}images/BPWhiteLogo.PNG" alt="BP" class="topLeftTitle"/>
         <li data-menuanchor="about" class="active"><a href="#about">About</a></li>
         <li data-menuanchor="education"><a href="#education">Education</a></li>
         <li data-menuanchor="experience"><a href="#experience">Experience</a></li>
         <li data-menuanchor="skills"><a href="#skills">Skills</a></li>
         <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
     </ul>
-    {{#full-page navigation='false' anchors='["about", "education", "experience", "skills", "contact"]' 
-        scrollingSpeed='500'}}
+    {{#full-page menu: '#menu' navigationPosition: 'right' navigation='false' anchors='["about", "education", "experience", "skills", "contact"]' 
+        scrollingSpeed='500' continuousVertical='true' sectionsColor='["#333", "#492365", "#123", "#666", "#575047"]'}}
         
         <div class="section active">
-            <h2 class="animated fadeInLeft">Bryce Palmer</h2>
-            <p class="animated fadeInLeft">Hi there, I'm Bryce, the developer of this website. I am {{myAge}} years old, with a BS degree in Computer Science from 
-                                        Weber State University. My passion is for Web Development, though I have skills in many other areas. I have a few other 
-                                        interests as well, some of which being snowboarding, golfing, hockey, and my pup. </p>
+            <div class="aboutBox">
+                <h1 class="animated fadeInLeft">I'm <br><span class="colorBlue">B</span>ryce <br><span class="colorBlue">P</span>almer</h1>
+                <h2 class="animated fadeInLeft aboutText">Skilled Software Developer <br>with a passion for Front-End <br>Development & Design</h2>                
+            </div>
         </div>
         <div class="section">
             <h2 class="animated fadeInDown">Education</h2>

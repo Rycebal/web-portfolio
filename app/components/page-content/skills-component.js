@@ -52,13 +52,13 @@ export default Component.extend({
     data4: Ember.computed('model', function() {
         return {
             datasets: [{
-                data: [90, 50, 80],
+                data: [90, 50, 75, 80],
                 backgroundColor: [
-                    '#902222', '#44ff99', '#77cc33'
+                    '#902222', '#44ff99', '#492365', '#77cc33'
                 ]
             }],
             labels: [
-                'Ember.js', 'Angular.js', 'Bootstrap'
+                'Ember.js', 'Angular.js', 'Vue.js', 'Bootstrap'
             ]
         }
     }),
@@ -76,7 +76,9 @@ export default Component.extend({
     options1: {
         title: {
             display: true,
-            text: 'Front-end'
+            text: 'Front-end',
+            fontColor: '#fff',
+            fontSize: 18
         },
         // animation: {
             // animation: true,
@@ -113,27 +115,62 @@ export default Component.extend({
 
         },
 
+        legend: {
+            labels: {
+                fontColor: '#fff',
+                fontSize: 16
+            }
+        }
+        
+
         // }
     },
 
     options2: {
         title: {
             display: true,
-            text: 'Back-end'
+            text: 'Back-end',
+            fontColor: '#fff',
+            fontSize: 18
+        },
+
+        legend: {
+            labels: {
+                fontColor: '#fff',
+                fontSize: 16
+            }
         }
     },
 
     options3: {
         title: {
             display: true,
-            text: 'Database'
+            text: 'Database',
+            fontColor: '#fff',
+            fontSize: 18
+        },
+
+        legend: {
+            labels: {
+                fontColor: '#fff',
+                fontSize: 16
+            }
         }
     },
 
     options4: {
         title: {
             display: true,
-            text: 'Frameworks'
+            text: 'Frameworks',
+            fontColor: '#fff',
+            fontSize: 18
+        },
+
+        legend: {
+            labels: {
+                fontColor: '#fff',
+                fontSize: 16
+            }
         }
     },
     
