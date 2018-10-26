@@ -374,52 +374,83 @@ h2.aboutText {
     margin-left: 35%;
 }
 
-// html {
-// 	display:block;
-// }
+input {
+	outline: none;
+	border: none;
+}
 
-// body {
-//     margin: 0;
-//     padding: 0;
-//     background:
-//         url(../images/darkWood.jpg)
-// }
+textarea {
+  outline: none;
+  border: none;
+}
 
-// .front-lines {
-//     font-size: 72px;
-//     text-align: center;
-//     color: white;
-// }
+button {
+	outline: none;
+	border: none;
+	background: transparent;
+}
 
-// .bottom-link {
-//     font-size: 36px;
-//     text-align: center;
-//     color: white;
-// }
+button:hover {
+	cursor: pointer;
+}
 
-// .chevron::before {
-// 	border-style: solid;
-// 	border-width: 0.2em 0.2em 0 0;
-// 	content: '';
-// 	display: inline-block;
-// 	height: 0.45em;
-// 	left: 0.15em;
-// 	position: relative;
-// 	top: 0.15em;
-// 	transform: rotate(-45deg);
-// 	vertical-align: middle;
-//     width: 0.45em;
-//     margin-top: -8px;
-// }
 
-// .chevron.bottom:before {
-//     top: 0;
-//     margin-right: 50px;
-// 	transform: rotate(135deg);
-// }
 
-// .bottom-links {
-//     bottom: 30px;
-//     position: fixed;
-//     width: 100%;
-// }
+
+.contact-container {
+    justify-content: center;
+    display: flex;
+}
+
+.contact-box {
+    background: #ffffff;
+    width: 550px;
+    border-radius: 40px;
+    padding: 50px 50px 75px 50px;
+}
+
+.contact-form-title {
+    font-size: 35px;
+    font-weight: 600;
+    color: #575047;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.input-fields {
+    border-bottom: 1px solid #575047;
+    margin-bottom: 30px;
+}
+
+.input-text {
+    width: 100%;
+    font-size: 20px;
+    color: #555555;
+}
+
+input.input-text {
+    height: 50px;
+}
+
+.submit-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.submit-background {
+    z-index: -1;
+    width: 250px;
+    height: 125px;
+    background: #1188ff;
+}
+
+.submit-button {
+    min-width: 222px;
+    height: 44px;
+    font-size: 20px;
+    color: #fff;
+    z-index: 1;
+    border-radius: 12px;
+}
+  

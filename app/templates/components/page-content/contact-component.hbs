@@ -1,0 +1,27 @@
+<div class="animated fadeInDown contact-container">
+    <div class="contact-box">
+        <form id="form-validation" method="post" action="sendEmail.php">
+            <h2 class="contact-form-title">
+                Send me a message
+            </h2>
+
+            <div class="input-fields validate-input" data-validate="I'd like to know who's messaging me">
+                <input class="input-text" type="text" name="name" placeholder="Name">
+            </div>
+
+            <div class="input-fields validate-input" data-validate = "Valid email is required">
+                <input class="input-text" type="text" name="email" placeholder="Email">
+            </div>
+
+            <div class="input-fields validate-input" data-validate = "Ya gotta tell me something to message me">
+                <textarea class="input-text" name="message" placeholder="Message"></textarea>
+            </div>
+
+            <div class="submit-container">
+                <button type="submit" name="submit" class="submit-background submit-button">
+                    Send Message
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
