@@ -454,3 +454,78 @@ input.input-text {
     border-radius: 12px;
 }
   
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex.wrap {
+    flex-wrap: wrap;
+}
+
+.flex.row {
+    flex-direction: row;
+}
+
+section .container {
+    max-width: 1200px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.project-container {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.project {
+    width: 400px;
+    height: 225px;
+}
+
+.project-container:hover {
+    background-color: #ddd;
+}
+
+.project-container .project {
+    z-index: 5;
+    transition: opacity .4s;
+}
+
+.project-container:hover .project {
+    opacity: 0;
+}
+
+.project-container:hover .text {
+    opacity: 1;
+    top: 20%;
+}
+
+.project-container .text {
+    z-index: 4;
+    opacity: 0;
+    top: 0;
+    transition: all .2s ease-in-out;
+}
+
+.text {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+}
+
+.greenCover {
+    background-color: #80bd10;
+}
+
+.blueCover {
+    background-color: blue;
+}
+
+.text p {
+    color: #000;
+    font-weight: 700;
+}
