@@ -470,7 +470,7 @@ input.input-text {
 }
 
 section .container {
-    max-width: 1200px;
+    max-width: 1250px;
     width: 100%;
     box-sizing: border-box;
 }
@@ -517,12 +517,33 @@ section .container {
     width: 100%;
 }
 
-.greenCover {
-    background-color: #80bd10;
+.blackjackCover {
+    background-image: url("/images/SchoolProjects/Blackjack/HomeScreen.PNG");
 }
 
-.blueCover {
-    background-color: blue;
+.majongCover {
+    background-image: url("/images/SchoolProjects/Majong/GameStart.png");
+}
+
+.slapJackCover {
+    background-image: url("/images/SchoolProjects/SlapJack/Home.png");
+}
+
+.typeTestCover {
+    background-image: url("/images/SchoolProjects/TypingTest/OctopusTest.png");
+}
+
+.onTrackCover {
+    background-image: url("/images/SchoolProjects/OnTrack/GetStarted.png");
+}
+
+.techInstructCover {
+    background-image: url("/images/SchoolProjects/TechnicalInstructions/PS4HDDReplace.png");
+}
+
+.backgroundCenter {
+    background-size: cover;
+    background-position: center;
 }
 
 .text p {
