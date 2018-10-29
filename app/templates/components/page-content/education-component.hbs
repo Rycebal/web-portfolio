@@ -1,42 +1,41 @@
 <section class="flex">
     <div class="container flex row wrap">
-        <div class="project-container">
-            {{!-- <img src="{{rootURL}}images/SchoolProjects/Blackjack/HomeScreen.PNG" alt="Blackjack" class="project"/> --}}
+        <div class="project-container" href="#" data-toggle="modal" data-target="#blackjackModal" data-backdrop="false">
             <div class="project blackjackCover backgroundCenter"></div>
             <div class="text">
                 <p>Blackjack</p>
                 <p>Java</p> 
             </div>
         </div>
-        <div class="project-container">
+        <div class="project-container" href="#" data-toggle="modal" data-target="#majongModal" data-backdrop="false">
             <div class="project majongCover backgroundCenter"></div>
             <div class="text">
                 <p>Majong</p>
                 <p>Java</p> 
             </div>
         </div>
-        <div class="project-container">
+        <div class="project-container" href="#" data-toggle="modal" data-target="#slapJackModal" data-backdrop="false">
             <div class="project slapJackCover backgroundCenter"></div>
             <div class="text">
                 <p>SlapJack</p>
                 <p>Java</p> 
             </div>
         </div>
-        <div class="project-container">
+        <div class="project-container" href="#" data-toggle="modal" data-target="#typingModal" data-backdrop="false">
             <div class="project typeTestCover backgroundCenter"></div>
             <div class="text">
                 <p>Typing Test</p>
                 <p>PHP</p> 
             </div>
         </div>
-        <div class="project-container">
+        <div class="project-container" href="#" data-toggle="modal" data-target="#onTrackModal" data-backdrop="false">
             <div class="project onTrackCover backgroundCenter"></div>
             <div class="text">
                 <p>On Track</p>
                 <p>JavaScript</p> 
             </div>
         </div>
-        <div class="project-container">
+        <div class="project-container" href="#" data-toggle="modal" data-target="#technicalModal" data-backdrop="false">
             <div class="project techInstructCover backgroundCenter"></div>
             <div class="text">
                 <p>Technical Instructions</p>
@@ -45,3 +44,304 @@
         </div>
     </div>
 </section>
+
+{{!-- Blackjack modal --}}
+<div class="modal fade" id="blackjackModal" tabindex="-1" role="dialog" aria-labelledby="blackjackModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content" style="max-width: 532px;">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+            </button>
+            <h4 class="modal-title">Blackjack - Java</h4>
+        </div>
+        <div class="modal-body">
+
+            <div class="container">
+                <div class="carousel">
+                    <input type="radio" id="bj-carousel-1" name="bj-carousel[]" checked>
+                    <input type="radio" id="bj-carousel-2" name="bj-carousel[]">
+                    <input type="radio" id="bj-carousel-3" name="bj-carousel[]">
+                    <input type="radio" id="bj-carousel-4" name="bj-carousel[]">
+                    <input type="radio" id="bj-carousel-5" name="bj-carousel[]">
+                    <ul class="carousel__items">
+                        <li class="carousel__item"><img src="/images/SchoolProjects/Blackjack/HomeScreen.PNG" alt=""></li>
+                        <li class="carousel__item"><img src="/images/SchoolProjects/Blackjack/GameSetup.PNG" alt=""></li>
+                        <li class="carousel__item"><img src="/images/SchoolProjects/Blackjack/Gameplay.png" alt=""></li>
+                        <li class="carousel__item"><img src="/images/SchoolProjects/Blackjack/Scores.png" alt=""></li>
+                        <li class="carousel__item"><img src="/images/SchoolProjects/Blackjack/GameRules.png" alt="" style="margin-top: 65px;"></li>
+                    </ul>
+                <div class="carousel__prev">
+                    <label for="bj-carousel-1"></label>
+                    <label for="bj-carousel-2"></label>
+                    <label for="bj-carousel-3"></label>
+                    <label for="bj-carousel-4"></label>
+                    <label for="bj-carousel-5"></label>
+                </div>
+                <div class="carousel__next">
+                <label for="bj-carousel-1"></label>
+                <label for="bj-carousel-2"></label>
+                <label for="bj-carousel-3"></label>
+                <label for="bj-carousel-4"></label>
+                <label for="bj-carousel-5"></label>
+                </div>
+            </div>
+            </div>
+            
+        </div>
+        <div class="modal-footer">
+            <h5 class="modal-description">Blackjack card game created as a team project in Java.</h5> 
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+        </div>
+    </div>
+</div>
+{{!-- End Blackjack modal --}}
+{{!-- Majon modal --}}
+<div class="modal fade" id="majongModal" tabindex="-1" role="dialog" aria-labelledby="majongModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content" style="max-width: 532px;">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+            </button>
+            <h4 class="modal-title">Majong - Java</h4>
+        </div>
+        <div class="modal-body">
+
+            <div class="container">
+                <div class="carousel">
+                    <input type="radio" id="mj-carousel-1" name="mj-carousel[]" checked>
+                    <input type="radio" id="mj-carousel-2" name="mj-carousel[]">
+                    <input type="radio" id="mj-carousel-3" name="mj-carousel[]">
+                    <input type="radio" id="mj-carousel-4" name="mj-carousel[]">
+                    <input type="radio" id="mj-carousel-5" name="mj-carousel[]">
+                    <ul class="carousel__items">
+                        <li class="carousel__item"><img src="/images/SchoolProjects/Majong/GameStart.png" alt="" style="margin-top: 65px;"></li>
+                        <li class="carousel__item"><img src="/images/SchoolProjects/Majong/Gameplay1.png" alt="" style="margin-top: 65px;"></li>
+                        <li class="carousel__item"><img src="/images/SchoolProjects/Majong/Gameplay2.png" alt="" style="margin-top: 65px;"></li>
+                        <li class="carousel__item"><img src="/images/SchoolProjects/Majong/Gameplay3.png" alt="" style="margin-top: 65px;"></li>
+                        <li class="carousel__item"><img src="/images/SchoolProjects/Majong/Finish.png" alt="" style="margin-top: 65px;"></li>
+                    </ul>
+                <div class="carousel__prev">
+                    <label for="mj-carousel-1"></label>
+                    <label for="mj-carousel-2"></label>
+                    <label for="mj-carousel-3"></label>
+                    <label for="mj-carousel-4"></label>
+                    <label for="mj-carousel-5"></label>
+                </div>
+                <div class="carousel__next">
+                <label for="mj-carousel-1"></label>
+                <label for="mj-carousel-2"></label>
+                <label for="mj-carousel-3"></label>
+                <label for="mj-carousel-4"></label>
+                <label for="mj-carousel-5"></label>
+                </div>
+            </div>
+            </div>
+            
+        </div>
+        <div class="modal-footer">
+            <h5 class="modal-description">Majong board game created as an Individual project in Advanced Java course.</h5> 
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+        </div>
+    </div>
+</div>
+{{!-- End Mojong modal --}}
+{{!-- SlapJack modal --}}
+<div class="modal fade" id="slapJackModal" tabindex="-1" role="dialog" aria-labelledby="slapJackModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content" style="max-width: 532px;">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+            </button>
+            <h4 class="modal-title">SlapJack - Java</h4>
+        </div>
+        <div class="modal-body">
+
+            <div class="container">
+                <div class="carousel">
+                    <input type="radio" id="sj-carousel-1" name="sj-carousel[]" checked>
+                    <input type="radio" id="sj-carousel-2" name="sj-carousel[]">
+                    <input type="radio" id="sj-carousel-3" name="sj-carousel[]">
+                    <input type="radio" id="sj-carousel-4" name="sj-carousel[]">
+                    <input type="radio" id="sj-carousel-5" name="sj-carousel[]">
+                    <ul class="carousel__items">
+                        <li class="carousel__item"><img src="/images/SchoolProjects/SlapJack/Home.png" alt="" style="margin-top: 65px;"></li>
+                        <li class="carousel__item"><img src="/images/SchoolProjects/SlapJack/Instructions.png" alt="" style="margin-top: 65px;"></li>
+                        <li class="carousel__item"><img src="/images/SchoolProjects/SlapJack/BeforeSlap.png" alt="" style="margin-top: 65px;"></li>
+                        <li class="carousel__item"><img src="/images/SchoolProjects/SlapJack/AfterSlap.png" alt="" style="margin-top: 65px;"></li>
+                        <li class="carousel__item"><img src="/images/SchoolProjects/SlapJack/Winner.png" alt="" style="margin-top: 65px;"></li>
+                    </ul>
+                <div class="carousel__prev">
+                    <label for="sj-carousel-1"></label>
+                    <label for="sj-carousel-2"></label>
+                    <label for="sj-carousel-3"></label>
+                    <label for="sj-carousel-4"></label>
+                    <label for="sj-carousel-5"></label>
+                </div>
+                <div class="carousel__next">
+                <label for="sj-carousel-1"></label>
+                <label for="sj-carousel-2"></label>
+                <label for="sj-carousel-3"></label>
+                <label for="sj-carousel-4"></label>
+                <label for="sj-carousel-5"></label>
+                </div>
+            </div>
+            </div>
+            
+        </div>
+        <div class="modal-footer">
+            <h5 class="modal-description">SlapJack card game created as a team project in Java.</h5> 
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+        </div>
+    </div>
+</div>
+{{!-- End SlapJack modal --}}
+{{!-- Typing Test modal --}}
+<div class="modal fade" id="typingModal" tabindex="-1" role="dialog" aria-labelledby="typingModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content" style="max-width: 532px;">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+            </button>
+            <h4 class="modal-title">Typing Test - PHP</h4>
+        </div>
+        <div class="modal-body">
+
+            <div class="container">
+                <div class="carousel">
+                    <input type="radio" id="tt-carousel-1" name="tt-carousel[]" checked>
+                    <input type="radio" id="tt-carousel-2" name="tt-carousel[]">
+                    <input type="radio" id="tt-carousel-3" name="tt-carousel[]">
+                    <input type="radio" id="tt-carousel-4" name="tt-carousel[]">
+                    <input type="radio" id="tt-carousel-5" name="tt-carousel[]">
+                    <ul class="carousel__items">
+                        <li class="carousel__item"><img src="/images/SchoolProjects/TypingTest/FrogTest.png" alt="" style="margin-top: 65px;"></li>
+                        <li class="carousel__item"><img src="/images/SchoolProjects/TypingTest/FrogMistake.png" alt="" style="margin-top: 65px;"></li>
+                        <li class="carousel__item"><img src="/images/SchoolProjects/TypingTest/OctopusTest.png" alt="" style="margin-top: 65px;"></li>
+                        <li class="carousel__item"><img src="/images/SchoolProjects/TypingTest/WhaleTest.png" alt="" style="margin-top: 65px;"></li>
+                        <li class="carousel__item"><img src="/images/SchoolProjects/TypingTest/Speed.png" alt="" style="margin-top: 65px;"></li>
+                    </ul>
+                <div class="carousel__prev">
+                    <label for="tt-carousel-1"></label>
+                    <label for="tt-carousel-2"></label>
+                    <label for="tt-carousel-3"></label>
+                    <label for="tt-carousel-4"></label>
+                    <label for="tt-carousel-5"></label>
+                </div>
+                <div class="carousel__next">
+                <label for="tt-carousel-1"></label>
+                <label for="tt-carousel-2"></label>
+                <label for="tt-carousel-3"></label>
+                <label for="tt-carousel-4"></label>
+                <label for="tt-carousel-5"></label>
+                </div>
+            </div>
+            </div>
+            
+        </div>
+        <div class="modal-footer">
+            <h5 class="modal-description">Typing speed test created as final project for Server Side Scripting class in PHP.</h5> 
+            <a type="button" class="btn btn-primary" href="http://icarus.cs.weber.edu/~bp42726/typeAway.php" target="_blank">View Site</a>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+        </div>
+    </div>
+</div>
+{{!-- End Typing Test modal --}}
+{{!-- On Track modal --}}
+<div class="modal fade" id="onTrackModal" tabindex="-1" role="dialog" aria-labelledby="onTrackModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content" style="max-width: 532px;">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+            </button>
+            <h4 class="modal-title">On Track - JavaScript</h4>
+        </div>
+        <div class="modal-body">
+
+            <div class="container">
+                <div class="carousel">
+                    <input type="radio" id="ot-carousel-1" name="ot-carousel[]" checked>
+                    <input type="radio" id="ot-carousel-2" name="ot-carousel[]">
+                    <input type="radio" id="ot-carousel-3" name="ot-carousel[]">
+                    <input type="radio" id="ot-carousel-4" name="ot-carousel[]">
+                    <input type="radio" id="ot-carousel-5" name="ot-carousel[]">
+                    <ul class="carousel__items">
+                        <li class="carousel__item"><img src="/images/SchoolProjects/OnTrack/GetStarted.png" alt="" style="margin-top: 65px;"></li>
+                        <li class="carousel__item"><img src="/images/SchoolProjects/OnTrack/Household.png" alt="" style="margin-top: 65px;"></li>
+                        <li class="carousel__item"><img src="/images/SchoolProjects/OnTrack/Results.png" alt="" style="margin-top: 65px;"></li>
+                        <li class="carousel__item"><img src="/images/SchoolProjects/OnTrack/ChildcareEdit.png" alt="" style="margin-top: 65px;"></li>
+                        <li class="carousel__item"><img src="/images/SchoolProjects/OnTrack/RoomsEdit.png" alt="" style="margin-top: 65px;"></li>
+                    </ul>
+                <div class="carousel__prev">
+                    <label for="ot-carousel-1"></label>
+                    <label for="ot-carousel-2"></label>
+                    <label for="ot-carousel-3"></label>
+                    <label for="ot-carousel-4"></label>
+                    <label for="ot-carousel-5"></label>
+                </div>
+                <div class="carousel__next">
+                <label for="ot-carousel-1"></label>
+                <label for="ot-carousel-2"></label>
+                <label for="ot-carousel-3"></label>
+                <label for="ot-carousel-4"></label>
+                <label for="ot-carousel-5"></label>
+                </div>
+            </div>
+            </div>
+            
+        </div>
+        <div class="modal-footer">
+            <h5 class="modal-description">On Track is a website I helped create for a non-profit organization to calculate the financial cost of living in Utah
+                based depending on number of parents and children in a household. Pure HTML, CSS, & JavaScript.</h5> 
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+        </div>
+    </div>
+</div>
+{{!-- End On Track modal --}}
+{{!-- Technical Instructions modal --}}
+<div class="modal fade" id="technicalModal" tabindex="-1" role="dialog" aria-labelledby="technicalModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content" style="max-width: 532px;">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+            </button>
+            <h4 class="modal-title">Technical Instructions - HTML, CSS</h4>
+        </div>
+        <div class="modal-body">
+
+            <div class="container">
+                <div class="carousel">
+                    <input type="radio" id="ti-carousel-1" name="ti-carousel[]" checked>
+                    <ul class="carousel__items">
+                        <li class="carousel__item"><img src="/images/SchoolProjects/TechnicalInstructions/PS4HDDReplace.png" alt="" style="margin-top: 65px;"></li>
+                    </ul>
+                <div class="carousel__prev">
+                    <label for="ti-carousel-1"></label>
+                </div>
+                <div class="carousel__next">
+                <label for="ti-carousel-1"></label>
+                </div>
+            </div>
+            </div>
+            
+        </div>
+        <div class="modal-footer">
+            <h5 class="modal-description">As a Technical Writing assignment to create technical instructions on how to do something,
+                I created a web page to show how to replace a PS4 Hard Disk Drive. I had just taken my first web development class and wanted to practice my new skills.</h5> 
+            <a type="button" class="btn btn-primary" href="http://icarus.cs.weber.edu/~bp42726/PS4HardDrive/PS4HardDrive.html" target="_blank">View Site</a>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+        </div>
+    </div>
+</div>
+{{!-- End Technical Instructions modal --}}

@@ -9,7 +9,7 @@
         <li data-menuanchor="skills"><a href="#skills">Skills</a></li>
         <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
     </ul>
-    {{#full-page menu: '#menu' navigationPosition: 'right' navigation='false' anchors='["about", "education", "experience", "skills", "contact"]' 
+    {{#full-page menu: '#menu' slideSelector: '.fullpageSlide' navigation='false' anchors='["about", "education", "experience", "skills", "contact"]' 
         scrollingSpeed='500' continuousVertical='true' sectionsColor='["#333", "#492365", "#123", "#666", "#575047"]'}}
         
         <div class="section active">
@@ -20,6 +20,7 @@
         </div>
         <div class="section">
             <p class="animated fadeInUp">I recieved my Bachelor of Science in Computer Science from Weber State University in Spring 2017</p><br>
+            {{!-- <h2 class="animated fadeInDown"  {{action "toggleModal"}}>School Projects</h2> --}}
             <h2 class="animated fadeInDown">School Projects</h2>
             {{page-content/education-component}}
         </div>
@@ -38,6 +39,7 @@
             {{page-content/contact-component}}
         </div>
     {{/full-page}}
+    
 
     </div>
 

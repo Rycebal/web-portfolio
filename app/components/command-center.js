@@ -7,7 +7,8 @@ export default Component.extend({
     },
 
     slide: 0,
-
+    isShowingModal: false,
+    
     actions: {
         calculateAge(birthday) {
             let that = this;
@@ -28,5 +29,12 @@ export default Component.extend({
             }
             that.set('myAge', tempAge);
         },
+        toggleModal: function() {
+            // if (typeof $.fn.fullpage.destroy == 'function') { 
+            //     $.fn.fullpage.destroy('all');
+            // }
+            // $.fn.fullpage.destroy('all');
+            this.toggleProperty('isShowingModal');
+        }
     }
 });
