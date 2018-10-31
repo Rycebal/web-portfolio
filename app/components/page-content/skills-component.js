@@ -10,7 +10,7 @@ export default Component.extend({
     data1: Ember.computed('model', function() {
         return {
             datasets: [{
-                data: [75, 85, 70],
+                data: [90, 85, 80],
                 backgroundColor: [
                 '#444', '#825', '#921'
             ],
@@ -24,7 +24,7 @@ export default Component.extend({
     data2: Ember.computed('model', function() {
         return {
             datasets: [{
-                data: [25, 20, 25, 15],
+                data: [55, 20, 20, 15],
                 backgroundColor: [
                     '#80bd10', '#379', '#a90', '#f72'
                 ]
@@ -52,7 +52,7 @@ export default Component.extend({
     data4: Ember.computed('model', function() {
         return {
             datasets: [{
-                data: [90, 50, 75, 80],
+                data: [90, 40, 75, 80],
                 backgroundColor: [
                     '#902222', '#44ff99', '#492365', '#77cc33'
                 ]

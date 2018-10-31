@@ -1,46 +1,126 @@
 <section class="flex">
     <div class="container flex row wrap">
-        <div class="project-container">
-            <div class="project greenCover"></div>
+        <div class="project-container" href="#" data-toggle="modal" data-target="#revelTVModal" data-backdrop="false">
+            <div class="project revelCover backgroundCenter"></div>
             <div class="text">
-                <p>Project 1</p>
-                <p>Ember.js MySQL Python</p> 
+                <p>RevelTV - Channel Valet</p>
+                <p>Ember.js, MySQL, Python</p> 
             </div>
         </div>
-        <div class="project-container">
-            <div class="project blueCover"></div>
+        <div class="project-container" href="#" data-toggle="modal" data-target="#vuePracticeModal" data-backdrop="false">
+            <div class="project vuejsCover backgroundCenter"></div>
             <div class="text">
-                <p>Project 2</p>
-                <p>PHP</p> 
-            </div>
-        </div>
-        <div class="project-container">
-            <div class="project redCover"></div>
-            <div class="text">
-                <p>Project 3</p>
-                <p>C++</p> 
-            </div>
-        </div>
-        <div class="project-container">
-            <div class="project pinkCover"></div>
-            <div class="text">
-                <p>Project 4</p>
-                <p>Angular</p> 
-            </div>
-        </div>
-        <div class="project-container">
-            <div class="project purpleCover"></div>
-            <div class="text">
-                <p>Project 5</p>
-                <p>JavaScript</p> 
-            </div>
-        </div>
-        <div class="project-container">
-            <div class="project yellowCover"></div>
-            <div class="text">
-                <p>Project 6</p>
-                <p>Java</p> 
+                <p>Vue.js Practice</p>
+                <p>Vue.js</p> 
             </div>
         </div>
     </div>
 </section>
+{{!-- RevelTV modal --}}
+<div class="modal fade" id="revelTVModal" tabindex="-1" role="dialog" aria-labelledby="revelTVModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content" style="max-width: 532px;">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+            </button>
+            <h4 class="modal-title">Channel Valet - Ember.js, MySQL, Python</h4>
+        </div>
+        <div class="modal-body">
+
+            <div class="container">
+                <div class="carousel">
+                    <input type="radio" id="cv-carousel-1" name="cv-carousel[]" checked>
+                    <input type="radio" id="cv-carousel-2" name="cv-carousel[]">
+                    <input type="radio" id="cv-carousel-3" name="cv-carousel[]">
+                    <input type="radio" id="cv-carousel-4" name="cv-carousel[]">
+                    <input type="radio" id="cv-carousel-5" name="cv-carousel[]">
+                    <ul class="carousel__items">
+                        <li class="carousel__item"><img src="/images/Work-Personal/RevelTV/Login.png" alt="" style="margin-top: 65px;"></li>
+                        <li class="carousel__item"><img src="/images/Work-Personal/RevelTV/Apps.png" alt="" style="margin-top: 65px;"></li>
+                        <li class="carousel__item"><img src="/images/Work-Personal/RevelTV/Request.png" alt="" style="margin-top: 65px;"></li>
+                        <li class="carousel__item"><img src="/images/Work-Personal/RevelTV/DirectUpload.png" alt="" style="margin-top: 65px;"></li>
+                        <li class="carousel__item"><img src="/images/Work-Personal/RevelTV/S2SYouTube.png" alt="" style="margin-top: 65px;"></li>
+                    </ul>
+                <div class="carousel__prev">
+                    <label for="cv-carousel-1"></label>
+                    <label for="cv-carousel-2"></label>
+                    <label for="cv-carousel-3"></label>
+                    <label for="cv-carousel-4"></label>
+                    <label for="cv-carousel-5"></label>
+                </div>
+                <div class="carousel__next">
+                <label for="cv-carousel-1"></label>
+                <label for="cv-carousel-2"></label>
+                <label for="cv-carousel-3"></label>
+                <label for="cv-carousel-4"></label>
+                <label for="cv-carousel-5"></label>
+                </div>
+            </div>
+            </div>
+            
+        </div>
+        <div class="modal-footer">
+            <h5 class="modal-description">
+                Channel Valet is a large scale web application I helped build over nearly 2 years in a small team of developers. 
+                It would take hundreds of sceenshots to show most of the features this site has and I can't give out a login for you to check it out yourself.
+                The general idea of the site is to get content onto the screens of businesses. Through uploading your own content, YouTube, having Graphic Designers
+                create it for you, Templates, etc.
+            </h5> 
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+        </div>
+    </div>
+</div>
+{{!-- End RevelTV modal --}}
+{{!-- Vue.js Practice modal --}}
+<div class="modal fade" id="vuePracticeModal" tabindex="-1" role="dialog" aria-labelledby="vuePracticeModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content" style="max-width: 532px;">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+            </button>
+            <h4 class="modal-title">Vue.js Practice Project - Vue.js</h4>
+        </div>
+        <div class="modal-body">
+
+            <div class="container">
+                <div class="carousel">
+                    <input type="radio" id="vp-carousel-1" name="vp-carousel[]" checked>
+                    <input type="radio" id="vp-carousel-2" name="vp-carousel[]">
+                    <input type="radio" id="vp-carousel-3" name="vp-carousel[]">
+                    <input type="radio" id="vp-carousel-4" name="vp-carousel[]">
+                    <ul class="carousel__items">
+                        <li class="carousel__item"><img src="/images/Work-Personal/VuePractice/LastSort.png" alt="" style="margin-top: 65px;"></li>
+                        <li class="carousel__item"><img src="/images/Work-Personal/VuePractice/UserSort.png" alt="" style="margin-top: 65px;"></li>
+                        <li class="carousel__item"><img src="/images/Work-Personal/VuePractice/Posts.png" alt="" style="margin-top: 65px;"></li>
+                        <li class="carousel__item"><img src="/images/Work-Personal/VuePractice/UserSort.png" alt="" style="margin-top: 65px;"></li>
+                    </ul>
+                <div class="carousel__prev">
+                    <label for="vp-carousel-1"></label>
+                    <label for="vp-carousel-2"></label>
+                    <label for="vp-carousel-3"></label>
+                    <label for="vp-carousel-4"></label>
+                </div>
+                <div class="carousel__next">
+                    <label for="vp-carousel-1"></label>
+                    <label for="vp-carousel-2"></label>
+                    <label for="vp-carousel-3"></label>
+                    <label for="vp-carousel-4"></label>
+                </div>
+            </div>
+            </div>
+            
+        </div>
+        <div class="modal-footer">
+            <h5 class="modal-description">I created this website as practice for teaching myself Vue.js. It fetches data from a fake Rest API,
+                then I display that JSON data in a table which is sortable by Last Name or Username. You can select a user to view their associated posts.
+            </h5> 
+            {{!-- <a type="button" class="btn btn-primary" href="http://icarus.cs.weber.edu/~bp42726/PS4HardDrive/PS4HardDrive.html" target="_blank">View Site</a> --}}
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+        </div>
+    </div>
+</div>
+{{!-- End Vue.js Practice modal --}}

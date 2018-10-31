@@ -344,7 +344,7 @@ li {
 
 img.topLeftTitle{
     position: fixed;
-    top: 25px;
+    top: 20px;
     left: 30px;
     height: 35px;
     z-index: 99;
@@ -541,6 +541,14 @@ section .container {
 
 .techInstructCover {
     background-image: url("/images/SchoolProjects/TechnicalInstructions/PS4HDDReplace.png");
+}
+
+.revelCover {
+    background-image: url("/images/Work-Personal/RevelTV/Login.png");
+}
+
+.vuejsCover {
+    background-image: url("/images/Work-Personal/VuePractice/LastSort.png");
 }
 
 .backgroundCenter {
