@@ -133,7 +133,7 @@ p{padding:10px}
     }
  }
  
- @keyframes fadeInLeft {
+@keyframes fadeInLeft {
     0% {
        opacity: 0;
        transform: translateX(-20px);
@@ -149,7 +149,7 @@ p{padding:10px}
  animation-name: fadeInLeft;
  } 
 
- @keyframes fadeInUp {
+@keyframes fadeInUp {
     from {
         transform: translate3d(0,40px,0)
     }
@@ -192,7 +192,7 @@ p{padding:10px}
     }
  }
  
- @keyframes fadeInDown {
+@keyframes fadeInDown {
     0% {
        opacity: 0;
        transform: translateY(-20px);
@@ -203,7 +203,7 @@ p{padding:10px}
     }
  }
  
- .fadeInDown {
+.fadeInDown {
     -webkit-animation-name: fadeInDown;
     animation-name: fadeInDown;
  }
@@ -889,3 +889,52 @@ div {
   }
   
   @include carousel(5);
+
+// ------------------ End Carousel CSS -----------------
+
+.floating {  
+    animation-name: floating;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 25px); }
+    to   { transform: translate(0, -0px); }    
+}
+
+.skills-left {
+    position: relative;
+    margin-right: 150px;
+}
+
+.skills-description {
+    font-size: 24px;
+    text-align: left;
+    // position: absolute;
+    // top: 50%;
+}
+
+// .skills-container {
+//     min-width: 1600px;
+//     margin-left: 5%;
+//     margin-right: 5%;
+// }
+
+@media (min-width: 1800px) {
+    .container {
+        width: 1600px;
+    }
+}
+
+.floating-skills {
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.all-skills {
+    text-align: center;
+}
