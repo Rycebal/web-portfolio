@@ -2,7 +2,7 @@
     {{!-- <a id="topLeftTitle">{{myAge}}</a> --}}
     <div id='app'>
     <ul id="menu" class="active">
-    <img src="/images/BPBlueLogo.PNG" alt="BP" class="topLeftTitle"/>
+    <img src="{{rootURL}}images/BPBlueLogo.PNG" alt="BP" class="topLeftTitle"/>
         <li data-menuanchor="about" class="active"><a href="#about">About</a></li>
         <li data-menuanchor="education"><a href="#education">Education</a></li>
         <li data-menuanchor="experience"><a href="#experience">Experience</a></li>
@@ -10,12 +10,12 @@
         <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
     </ul>
     {{#full-page menu: '#menu' slideSelector: '.fullpageSlide' navigation='false' anchors='["about", "education", "experience", "skills", "contact"]' 
-        scrollingSpeed='500' continuousVertical='true' sectionsColor='["#333", "#492365", "#123", "#111", "#575047"]'}}
+        scrollingSpeed='500' continuousVertical='true' sectionsColor='["#333", "#492365", "#123", "#666", "#575047"]'}}
         
         <div class="section active">
             <div class="aboutBox">
                 <h1 class="animated fadeInLeft">I'm <br><span class="colorBlue">B</span>ryce<br><span class="colorBlue">P</span>almer</h1>
-                <h2 class="animated fadeInRight aboutText">Skilled Software Developer <br>with a passion for Front-End <br>Development & Design</h2>                
+                <h2 class="animated fadeInLeft aboutText">Skilled Software Developer <br>with a passion for Front-End <br>Development & Design</h2>                
             </div>
         </div>
         <div class="section">

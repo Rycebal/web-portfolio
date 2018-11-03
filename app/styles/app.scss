@@ -372,9 +372,37 @@ h2.aboutText {
     color: #1188ff;
 }
 
-.aboutBox {
-    margin-left: 35%;
+@media screen and (max-width: 500px) {
+    .aboutBox {
+        margin-left: 10%;
+    }
 }
+@media screen and (min-width: 501px) {
+    .aboutBox {
+        margin-left: 15%;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .aboutBox {
+        margin-left: 23%;
+    }
+}
+@media screen and (min-width: 1250px) {
+    .aboutBox {
+        margin-left: 27%;
+    }
+}
+@media screen and (min-width: 1500px) {
+    .aboutBox {
+        margin-left: 30%;
+    }
+}
+@media screen and (min-width: 1750px) {
+    .aboutBox {
+        margin-left: 35%;
+    }
+}
+
 
 input {
 	outline: none;
@@ -662,105 +690,105 @@ div {
 
 
 /**
- * Carousel.sass
- * @author: Dang Van Thanh
- * @github: https://github.com/dangvanthanh/carousel.sass
- * @description: A Simple Carousel Pure CSS Using Sass
- * @version: 1.0.0
- */
- %animation-default {
+* Carousel.sass
+* @author: Dang Van Thanh
+* @github: https://github.com/dangvanthanh/carousel.sass
+* @description: A Simple Carousel Pure CSS Using Sass
+* @version: 1.0.0
+*/
+%animation-default {
     opacity: 1 !important;
     z-index: 3;
-  }
+}
   
-  @mixin carousel($items, $animation: 'default') {
-    .carousel {
-      width: 500px;
-      height: 450px;
-      position: relative;
-      overflow: hidden;
-  
-      > input[type="radio"] {
+@mixin carousel($items, $animation: 'default') {
+.carousel {
+    width: 500px;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+
+    > input[type="radio"] {
         position: absolute;
         left: 0;
         opacity: 0;
         top: 0;
-  
-        &:checked {
-          ~ .carousel__items .carousel__item,
-          ~ .carousel__prev > label,
-          ~ .carousel__next > label {
+
+    &:checked {
+        ~ .carousel__items .carousel__item,
+        ~ .carousel__prev > label,
+        ~ .carousel__next > label {
             opacity: 0;
-          }
         }
-  
-        @for $i from 1 through $items {
-          &:nth-child(#{$i}) {
-            &:checked {
-              ~ .carousel__items .carousel__item {
-                @if $animation == 'default' {
-                  &:nth-child(#{$i}) {
-                    opacity: 1;
-                  }
+    }
+
+    @for $i from 1 through $items {
+        &:nth-child(#{$i}) {
+        &:checked {
+            ~ .carousel__items .carousel__item {
+            @if $animation == 'default' {
+                &:nth-child(#{$i}) {
+                opacity: 1;
                 }
-              }
-  
-              ~ .carousel__prev {
-                > label {
-                  @if $i == 1 {
-                    &:nth-child(#{$items}) {
-                      @extend %animation-default;
-                    }
-                  } @else if $i == $items {
-                    &:nth-child(#{$items - 1}) {
-                      @extend %animation-default;
-                    }
-                  } @else {
-                    &:nth-child(#{$i - 1}) {
-                      @extend %animation-default;
-                    }
-                  }
+            }
+            }
+
+            ~ .carousel__prev {
+            > label {
+                @if $i == 1 {
+                &:nth-child(#{$items}) {
+                    @extend %animation-default;
                 }
-              }
-  
-              ~ .carousel__next {
-                > label {
-                  @if $i == $items {
-                    &:nth-child(1) {
-                      @extend %animation-default;
-                    }
-                  } @else {
-                    &:nth-child(#{$i + 1}) {
-                      @extend %animation-default;
-                    }
-                  }
+                } @else if $i == $items {
+                &:nth-child(#{$items - 1}) {
+                    @extend %animation-default;
                 }
-              }
-  
-              ~ .carousel__nav {
-                > label {
-                  &:nth-child(#{$i}) {
+                } @else {
+                &:nth-child(#{$i - 1}) {
+                    @extend %animation-default;
+                }
+                }
+            }
+            }
+
+            ~ .carousel__next {
+            > label {
+                @if $i == $items {
+                &:nth-child(1) {
+                    @extend %animation-default;
+                }
+                } @else {
+                &:nth-child(#{$i + 1}) {
+                    @extend %animation-default;
+                }
+                }
+            }
+            }
+
+            ~ .carousel__nav {
+            > label {
+                &:nth-child(#{$i}) {
                     background: #ccc;
                     cursor: default;
                     pointer-events: none;
-                  }
                 }
-              }
             }
-          }
+            }
         }
-      }
-  
-      &__items {
+        }
+    }
+    }
+
+    &__items {
         margin: 0;
         padding: 0;
         list-style-type: none;
         width: 100%;
         height: 600px;
         position: relative;
-      }
-  
-      &__item {
+    }
+
+    &__item {
         position: absolute;
         vertical-align: middle;
         top: 0;
@@ -770,115 +798,115 @@ div {
         z-index: 1;
         transition: opacity 1s;
         -webkit-transition: opacity 1s;
-  
-        img {
-          width: 100%;
-          vertical-align: middle;
-        }
-      }
-  
-      &__prev,
-      &__next {
-        > label {
-          border: 1px solid #999;
-          border-radius: 50%;
-          cursor: pointer;
-          display: block;
-          width: 40px;
-          height: 40px;
-          position: absolute;
-          top: 45%;
-          transform: translateY(-50%);
-          -webkit-transform: translateY(-50%);
-          transition: all .3s ease;
-          -webkit-transition: all .3s ease;
-          opacity: 0;
-          z-index: 2;
-  
-          &:hover,
-          &:focus {
+
+    img {
+        width: 100%;
+        vertical-align: middle;
+    }
+    }
+
+    &__prev,
+    &__next {
+    > label {
+        border: 1px solid #999;
+        border-radius: 50%;
+        cursor: pointer;
+        display: block;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 45%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        transition: all .3s ease;
+        -webkit-transition: all .3s ease;
+        opacity: 0;
+        z-index: 2;
+
+        &:hover,
+        &:focus {
             opacity: .5 !important;
-          }
-  
-          &:before,
-          &:after {
+        }
+
+        &:before,
+        &:after {
             content: "";
             position: absolute;
             width: inherit;
             height: inherit;
-          }
-  
-          &:before {
-            background: linear-gradient(to top, #fff 0%, #fff 10%, rgba(51, 51, 51, 0) 10%),
-                        linear-gradient(to left, #fff 0%, #fff 10%, rgba(51, 51, 51, 0) 10%);
+        }
+
+        &:before {
+            background: linear-gradient(to top, #777 0%, #777 10%, rgba(51, 51, 51, 0) 10%),
+                        linear-gradient(to left, #777 0%, #777 10%, rgba(51, 51, 51, 0) 10%);
             width: 60%;
             height: 60%;
             top: 20%;
-          }
         }
-      }
-  
-      &__prev {
-        > label {
-          left: 2%;
-  
-          &:before {
+    }
+    }
+
+    &__prev {
+    > label {
+        left: 2%;
+
+        &:before {
             left: 35%;
             top: 20%;
             transform: rotate(135deg);
             -webkit-transform: rotate(135deg);
-          }
         }
-      }
-  
-      &__next {
-        > label {
-          right: 2%;
-  
-          &:before {
-            left: 10%;
-            transform: rotate(315deg);
-            -webkit-transform: rotate(315deg);
-          }
+    }
+    }
+
+    &__next {
+    > label {
+        right: 2%;
+
+        &:before {
+        left: 10%;
+        transform: rotate(315deg);
+        -webkit-transform: rotate(315deg);
         }
-      }
-  
-      &__nav {
-          display: none;
+    }
+    }
+
+    &__nav {
+        display: none;
         position: absolute;
         bottom: 3%;
         left: 0;
         text-align: center;
         width: 100%;
         z-index: 3;
-  
-        > label {
-          border: 1px solid #fff;
-          display: inline-block;
-          border-radius: 50%;
-          cursor: pointer;
-          margin: 0 .125%;
-          width: 20px;
-          height: 20px;
-        }
-      }
+
+    > label {
+        border: 1px solid #fff;
+        display: inline-block;
+        border-radius: 50%;
+        cursor: pointer;
+        margin: 0 .125%;
+        width: 20px;
+        height: 20px;
     }
-  }
-  
-  *,
-  *:before,
-  *:after {
+    }
+}
+}
+
+*,
+*:before,
+*:after {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-  }
-  
-  body {
+}
+
+body {
     background: #fcfcfc;
     margin: 0;
-  }
-  
-  .modal-body .container {
+}
+
+.modal-body .container {
     width: 500px;
     min-width: 500px;
     height: 400px;
@@ -886,9 +914,9 @@ div {
     margin-right: 0;
     padding-left: 0px;
     padding-right: 0px;
-  }
-  
-  @include carousel(5);
+}
+
+@include carousel(5);
 
 // ------------------ End Carousel CSS -----------------
 
@@ -901,7 +929,7 @@ div {
 
 @keyframes floating {
     from { transform: translate(0,  0px); }
-    65%  { transform: translate(0, 25px); }
+    50%  { transform: translate(0, 25px); }
     to   { transform: translate(0, -0px); }    
 }
 
@@ -932,9 +960,199 @@ div {
 .floating-skills {
     font-weight: 700;
     font-size: 30px;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
 }
 
 .all-skills {
     text-align: center;
 }
+
+.rotate-neg-15 {
+/* Safari */
+-webkit-transform: rotate(-15deg);
+
+/* Firefox */
+-moz-transform: rotate(-15deg);
+
+/* IE */
+-ms-transform: rotate(-15deg);
+
+/* Opera */
+-o-transform: rotate(-15deg);
+
+/* Internet Explorer */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+}
+
+.rotate-neg-5 {
+/* Safari */
+-webkit-transform: rotate(-5deg);
+
+/* Firefox */
+-moz-transform: rotate(-5deg);
+
+/* IE */
+-ms-transform: rotate(-5deg);
+
+/* Opera */
+-o-transform: rotate(-5deg);
+
+/* Internet Explorer */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+}
+
+.rotate-pos-5 {
+/* Safari */
+-webkit-transform: rotate(5deg);
+
+/* Firefox */
+-moz-transform: rotate(5deg);
+
+/* IE */
+-ms-transform: rotate(5deg);
+
+/* Opera */
+-o-transform: rotate(5deg);
+
+/* Internet Explorer */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+}
+
+.rotate-pos-15 {
+/* Safari */
+-webkit-transform: rotate(15deg);
+
+/* Firefox */
+-moz-transform: rotate(15deg);
+
+/* IE */
+-ms-transform: rotate(15deg);
+
+/* Opera */
+-o-transform: rotate(15deg);
+
+/* Internet Explorer */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+}
+
+
+
+// --------------------------------Responsive----------------------------------
+
+@media screen and (max-width:1135px) {
+    .fp-tableCell {
+        font-size:.9em
+    }
+    .examples-wrapper {
+        top:100px;-webkit-transform:none;
+        transform:none
+    }
+}
+@media screen and (max-width:1050px) {
+    .fp-tableCell {
+        font-size:.85em
+    }
+}
+@media screen and (max-width:1030px) {
+    #section-3 .intro {
+        width:40%
+    }
+    .shell{width:calc(60% - 54px)
+    }
+}
+@media screen and (max-width:900px) {
+    #section-3 .intro {
+        display:block;
+        text-align:center;
+        width:100%}#section-3 .intro p {
+            display:none
+        }
+        .shell {
+            width:80%;margin:0
+        }#menu {
+            text-align:center;
+            left:0;
+            right:0
+        }
+        #menu-theme-desktop {
+            display:none!important
+        }
+        #menu-theme-mobile {
+            display:inline-block
+        }
+        .language {
+            left:50%;
+            margin-left:-71px;
+            bottom:70px;
+            top:auto;
+            transition:all 1s ease-in;
+            -webkit-transition:all .3s ease-in;
+            opacity:0;
+            visibility:hidden
+        }
+        .fp-viewing-page1 .language {
+            display:block;
+            opacity:1;
+            visibility:visible
+        }
+    }
+    @media screen and (max-height:500px) {
+        .section-1-usedBy {
+            display:none
+        }
+        .fp-slidesNav.bottom {
+            bottom:0
+        }
+        .trusted-by-big {
+            background-position:50% 0;
+            height:54px
+        }
+    }
+    @media screen and (max-height:330px) {
+        .fp-section {height:350px!important}
+    }
+    @media screen and (max-width:700px),screen and (max-height:500px) {
+        .fp-tableCell {font-size:.8em}
+        #menu a {padding:0 .7em .7em}
+        .my-arrow.left,.my-arrow.right {display:none}
+        .fp-slidesNav.bottom{display:block}
+    }
+    @media screen and (max-width:630px) {
+        h1 {font-size:6.5em}
+        #menu {
+            letter-spacing:0;
+            font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol'
+        }
+        [data-lang=ru] h1{font-size:4em}
+    }
+    @media screen and (max-width:550px) {
+        #section-1 h1 {
+            font-size:6em
+        }
+        h1 {
+            font-size:5em
+        }
+        [data-lang=ru] h1{font-size:3.6em}
+        .intro p {max-width:75%}
+        #menu li a{padding:0 .7em .7em}
+        [data-lang=es] #menu li a,[data-lang=ru] #menu li a {padding:0 .4em .4em}
+        [data-lang=es] #menu,[data-lang=ru] #menu {font-size:.98em}
+        #download,#menu-contact,.mobile-hide {display:none!important}
+        .shell-body {margin:1.6em}
+        #fp-nav.right{right:7px}
+    }
+    @media screen and (max-width:380px) {
+        h1 {font-size:3.5em}
+        .intro p{max-width:85%}
+        #section-3 .shell{font-size:.8em}
+        .shell-body{margin:1em}
+    }
+    @media only screen and (min-width:551px) {
+        .mobile-show{display:none}
+    }
+
+//-------------------------------------------------------
