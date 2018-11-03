@@ -511,6 +511,85 @@ section .container {
     cursor: pointer;
 }
 
+@media screen and (max-width: 1250px) {
+    .container {
+        width: 1030px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .project-container > .project.backgroundCenter {
+        width: 333px;
+        height: 187px;
+    }
+}
+
+@media screen and (max-width: 1030px) {
+    .container {
+        width: 800px;
+    }
+}
+
+@media screen and (max-width: 1030px) {
+    .project-container > .project.backgroundCenter {
+        width: 266px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .project-container > .project.backgroundCenter {
+        width: 200px;
+        height: 112px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .project-container > .project.backgroundCenter {
+        width: 182px;
+        height: 102px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .container {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .project-container > .project.backgroundCenter {
+        width: 133px;
+        height: 75px;
+    }
+}
+
+
+@media screen and (max-width: 325px) {
+    .container {
+        width: 275px;
+    }
+}
+
+@media screen and (max-width: 325px) {
+    .project-container > .project.backgroundCenter {
+        width: 125px;
+        height: 70px;
+    }
+}
+
 .project {
     width: 400px;
     height: 225px;
