@@ -23,47 +23,49 @@
                 <span class="sr-only">Close main menu</span>
                 <span class="fa fa-close" aria-hidden="true"></span>
             </a> --}}
-    <ul id="menu" class="active">
-        <img src="/images/BPBlueLogo.PNG" alt="BP" class="topLeftTitle"/>
-        <li data-menuanchor="about" class="active"><a href="#about">About</a></li>
-        <li data-menuanchor="education"><a href="#education">Education</a></li>
-        <li data-menuanchor="experience"><a href="#experience">Experience</a></li>
-        <li data-menuanchor="skills"><a href="#skills">Skills</a></li>
-        <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
-    </ul>
+
+            <ul id="menu" class="active">
+                <img src="/images/BPBlueLogo.PNG" alt="BP" class="topLeftTitle"/>
+                <li data-menuanchor="about" class="active"><a href="#about">About</a></li>
+                <li data-menuanchor="education"><a href="#education">Education</a></li>
+                <li data-menuanchor="experience"><a href="#experience">Experience</a></li>
+                <li data-menuanchor="skills"><a href="#skills">Skills</a></li>
+                <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
+            </ul>
 {{!-- 
-  </nav>
-  <a href="#main-menu-toggle"
-     class="backdrop"
-     tabindex="-1"
-     aria-hidden="true" hidden></a> --}}
+        </nav>
+        <a href="#main-menu-toggle"
+            class="backdrop"
+            tabindex="-1"
+            aria-hidden="true" hidden>
+        </a> --}}
      
-    {{#full-page menu: '#menu' slideSelector: '.fullpageSlide' navigation='false' anchors='["about", "education", "experience", "skills", "contact"]' 
-        scrollingSpeed='500' continuousVertical='true' sectionsColor='["#333", "#492365", "#123", "#111", "#575047"]'}}
-        
-        <div class="section active">
-            <div class="aboutBox">
-                <h1 class="animated fadeInLeft">I'm <br><span class="colorBlue">B</span>ryce<br><span class="colorBlue">P</span>almer</h1>
-                <h2 class="animated fadeInRight aboutText">Skilled Software Developer <br>with a passion for Front-End <br>Development & Design</h2>                
+        {{#full-page menu: '#menu' slideSelector: '.fullpageSlide' navigation='false' anchors='["about", "education", "experience", "skills", "contact"]' 
+            scrollingSpeed='500' continuousVertical='true' sectionsColor='["#333", "#492365", "#123", "#111", "#575047"]'}}
+            
+            <div class="section active">
+                <div class="aboutBox">
+                    <h1 class="animated fadeInLeft">I'm <br><span class="colorBlue">B</span>ryce<br><span class="colorBlue">P</span>almer</h1>
+                    <h2 class="animated fadeInRight aboutText">Skilled Software Developer <br>with a passion for Front-End <br>Development & Design</h2>                
+                </div>
             </div>
-        </div>
-        <div class="section">
-            <p class="animated fadeInUp">I recieved my Bachelor of Science in Computer Science from Weber State University in Spring 2017</p><br>
-            <h2 class="animated fadeInDown">School Projects</h2>
-            {{page-content/education-component}}
-        </div>
-        <div class="section">
-            <h2 class="animated fadeInRight">Work and personal projects</h2>
-            {{page-content/experience-component}}
-        </div>
-        <div class="section">
-            {{page-content/skills-component}}
-        </div>
-        <div class="section">
-            <h2 class="animated fadeInLeft">You want to hire me? Have a question? Or just want to say hi?</h2><br>
-            <p class="animated fadeInRight">I'm currently working on a contact form, so for now send me an e-mail at brympal@gmail.com :)</p>
-            {{!-- {{page-content/contact-component}} --}}
-        </div>
-    {{/full-page}}
+            <div class="section">
+                <p class="animated fadeInUp">I recieved my Bachelor of Science in Computer Science from Weber State University in Spring 2017</p><br>
+                <h2 class="animated fadeInDown">School Projects</h2>
+                {{page-content/education-component}}
+            </div>
+            <div class="section">
+                <h2 class="animated fadeInRight">Work and personal projects</h2>
+                {{page-content/experience-component}}
+            </div>
+            <div class="section">
+                {{page-content/skills-component}}
+            </div>
+            <div class="section">
+                <h2 class="animated fadeInLeft">You want to hire me? Have a question? Or just want to say hi?</h2><br>
+                <p class="animated fadeInRight">I'm currently working on a contact form, so for now send me an e-mail at brympal@gmail.com :)</p>
+                {{!-- {{page-content/contact-component}} --}}
+            </div>
+        {{/full-page}}
     </div>
 </div>
