@@ -1,14 +1,43 @@
 <div class="whole-page">
-    {{!-- <a id="topLeftTitle">{{myAge}}</a> --}}
     <div id='app'>
+        {{!-- <a href="#main-menu"
+            role="button"
+            id="main-menu-toggle"
+            class="menu-toggle"
+            aria-expanded="false"
+            aria-controls="main-menu"
+            aria-label="Open main menu">
+
+            <span class="sr-only">Open main menu</span>
+            <span class="fa fa-bars" aria-hidden="true"></span>
+        </a>
+        <nav id="main-menu" role="navigation" class="main-menu" aria-expanded="false" aria-label="Main menu">
+            <a href="#main-menu-toggle"
+                role="button"
+                id="main-menu-close"
+                class="menu-close"
+                aria-expanded="false"
+                aria-controls="main-menu"
+                aria-label="Close main menu">
+
+                <span class="sr-only">Close main menu</span>
+                <span class="fa fa-close" aria-hidden="true"></span>
+            </a> --}}
     <ul id="menu" class="active">
-    <img src="/images/BPBlueLogo.PNG" alt="BP" class="topLeftTitle"/>
+        <img src="/images/BPBlueLogo.PNG" alt="BP" class="topLeftTitle"/>
         <li data-menuanchor="about" class="active"><a href="#about">About</a></li>
         <li data-menuanchor="education"><a href="#education">Education</a></li>
         <li data-menuanchor="experience"><a href="#experience">Experience</a></li>
         <li data-menuanchor="skills"><a href="#skills">Skills</a></li>
         <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
     </ul>
+{{!-- 
+  </nav>
+  <a href="#main-menu-toggle"
+     class="backdrop"
+     tabindex="-1"
+     aria-hidden="true" hidden></a> --}}
+     
     {{#full-page menu: '#menu' slideSelector: '.fullpageSlide' navigation='false' anchors='["about", "education", "experience", "skills", "contact"]' 
         scrollingSpeed='500' continuousVertical='true' sectionsColor='["#333", "#492365", "#123", "#111", "#575047"]'}}
         
@@ -20,29 +49,21 @@
         </div>
         <div class="section">
             <p class="animated fadeInUp">I recieved my Bachelor of Science in Computer Science from Weber State University in Spring 2017</p><br>
-            {{!-- <h2 class="animated fadeInDown"  {{action "toggleModal"}}>School Projects</h2> --}}
             <h2 class="animated fadeInDown">School Projects</h2>
             {{page-content/education-component}}
         </div>
         <div class="section">
             <h2 class="animated fadeInRight">Work and personal projects</h2>
-            {{!-- <p class="animated fadeInRight">Nearly 2 years at RevelTV as a Jr Software Developer</p> --}}
             {{page-content/experience-component}}
         </div>
         <div class="section">
-            {{!-- <h2 class="animated fadeInUp">Skills</h2> --}}
             {{page-content/skills-component}}
         </div>
         <div class="section">
             <h2 class="animated fadeInLeft">You want to hire me? Have a question? Or just want to say hi?</h2><br>
-
             <p class="animated fadeInRight">I'm currently working on a contact form, so for now send me an e-mail at brympal@gmail.com :)</p>
-            {{!-- <p class="animated fadeInRight">801-628-7083 or brympal@gmail.com</p> --}}
             {{!-- {{page-content/contact-component}} --}}
         </div>
     {{/full-page}}
-    
-
     </div>
-
 </div>
