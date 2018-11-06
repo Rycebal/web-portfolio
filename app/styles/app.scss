@@ -1001,6 +1001,14 @@ body {
     }
 }
 
+@media screen and (max-height: 900px) and (max-width: 450px) {
+    .floating-skills {
+        font-size: 1.8em;
+        margin-bottom: 15px;
+        padding-right: 5px;
+    }
+}
+
 @media screen and (max-width: 650px) and (max-height: 600px) {
     .floating-skills {
         font-weight: 500;
