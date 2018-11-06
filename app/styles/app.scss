@@ -2,6 +2,10 @@
 @import "ember-modal-dialog/ember-modal-structure";
 @import "ember-modal-dialog/ember-modal-appearance";
 
+$logoBlue: #1188ff;
+$white: #ffffff;
+
+
 .whole-page {
     position: absolute;
     padding:0;
@@ -16,65 +20,7 @@ p {
     font-size: 24px;
 }
 
-.carousel-inner {
-  height: 100%;
-  background: #000;
-}
-
-.carousel-caption{
-    position: absolute;
-    left: 15%;
-    right: 15%;
-    top: 20px;
-    z-index: 10;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: #fff;
-    text-align: center;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
-    padding-bottom:80px;
-}
-
-p{padding:10px}
-
-/* Background images are set within the HTML using inline CSS, not here */
-
-.fill {
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    opacity:0.6;
-    background-color: #444444;
-}
-
-/**
- * Button
- */
-.btn-transparent {
-  background: transparent;
-  color: #fff;
-  border: 2px solid #fff;
-}
-.btn-transparent:hover {
-  background-color: #fff;
-}
-
-.btn-rounded {
-  border-radius: 70px;
-}
-
-.btn-large {
-  padding: 11px 45px;
-  font-size: 18px;
-}
-
-/**
- * Change animation duration
- */
+// -----Text animations-----
 .animated {
   -webkit-animation-duration: 1.5s;
   -webkit-animation-fill-mode: both;
@@ -124,7 +70,7 @@ p{padding:10px}
        opacity: 1;
        -webkit-transform: translateX(0);
     }
- }
+}
  
 @keyframes fadeInLeft {
     0% {
@@ -135,12 +81,12 @@ p{padding:10px}
        opacity: 1;
        transform: translateX(0);
     }
- }
+}
  
- .fadeInLeft {
- -webkit-animation-name: fadeInLeft;
- animation-name: fadeInLeft;
- } 
+.fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+} 
 
 @keyframes fadeInUp {
     from {
@@ -183,7 +129,7 @@ p{padding:10px}
        opacity: 1;
        -webkit-transform: translateY(0);
     }
- }
+}
  
 @keyframes fadeInDown {
     0% {
@@ -194,30 +140,17 @@ p{padding:10px}
        opacity: 1;
        transform: translateY(0);
     }
- }
+}
  
 .fadeInDown {
     -webkit-animation-name: fadeInDown;
     animation-name: fadeInDown;
- }
-
-.carousel-indicators li{
-    font-size: 27px;
-    text-indent:0;
-    width: 15%;
-    height: 40px;
-    border:none;
-    color: white;
-    background-color: transparent;
 }
 
-.carousel-indicators.selections li.active {
-    text-indent:0;
-    width: 15%;
-    height: 40px;
-    border:none;
-    color: white;
-    background-color: #000;
+//---------End text animations-----------
+
+#app {
+    height: 100%;
 }
 
 #menu {
@@ -233,36 +166,11 @@ p{padding:10px}
     letter-spacing: 1px;
 }
 
-a {
-    text-decoration: none;
-    color: #ffffff;
-}
-
-a:hover {
-    color: #80bd10;
-    text-decoration: none;
-}
-
-a:visited {
-    text-decoration: none;
-    color: #ffffff;
-}
-
-a:focus {
-    text-decoration: none;
-    color: #ffffff;
-}
-
-a.active {
-    text-decoration: underline;
-    color: #80bd10;
-}
-
 #menu li.active a:after {
     content: '';
     margin: 0 1.1em 0 1.1em;
     height: 2px;
-    background: #fff;
+    background: $white;
     position: absolute;
     bottom: -3px;
     left: 0;
@@ -270,25 +178,44 @@ a.active {
     display: block;
 }
 
-ul {
-    display: block;
-    list-style: none;
-}
-
-#menu a {
-    color: #ffffff;
-    padding: 0 1.1em 1.1em 1.1em;
-}
-
-#app {
-    height: 100%;
-}
-
 #menu li {
     display: inline-block;
     margin: 10px 0;
     position: relative;
     padding: 0px;
+}
+
+#menu a {
+    color: $white;
+    padding: 0 1.1em 1.1em 1.1em;
+}
+
+a {
+    text-decoration: none;
+    color: $white;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color: $white;
+}
+
+a:focus {
+    text-decoration: none;
+    color: $white;
+}
+
+a.active {
+    text-decoration: underline;
+}
+
+ul {
+    display: block;
+    list-style: none;
 }
 
 li {
@@ -308,23 +235,28 @@ h1 {
     font-size: 7em;
     font-weight: 700;
     letter-spacing: 0.2em;
-    color: #ffffff;
+    color: $white;
     text-transform: uppercase;
 }
 h2, p {
     letter-spacing: .1em;
     text-align: center;
-    color: #ffffff;
+    color: $white;
 }
 
 h2.aboutText {
     text-align: left;
 }
 
-.colorBlue {
-    color: #1188ff;
+div {
+    display: block;
 }
 
+.colorBlue {
+    color: $logoBlue;
+}
+
+//-------About page responsive----------
 @media screen and (max-width: 500px) {
     .aboutBox {
         margin-left: 10%;
@@ -355,6 +287,7 @@ h2.aboutText {
         margin-left: 35%;
     }
 }
+//-------------------------------------
 
 input {
 	outline: none;
@@ -382,7 +315,7 @@ button:hover {
 }
 
 .contact-box {
-    background: #ffffff;
+    background: $white;
     width: 550px;
     border-radius: 40px;
     padding: 50px 50px 75px 50px;
@@ -421,14 +354,14 @@ input.input-text {
     z-index: -1;
     width: 250px;
     height: 125px;
-    background: #1188ff;
+    background: $logoBlue;
 }
 
 .submit-button {
     min-width: 222px;
     height: 44px;
     font-size: 20px;
-    color: #fff;
+    color: $white;
     z-index: 1;
     border-radius: 12px;
 }
@@ -625,22 +558,9 @@ section .container {
     position: absolute;
 }
 
-.carousel-container {
-    width: 558px;
-    height: 450px;
-    position: relative;
-    margin: 0 auto;
-}
-
 .window {
     overflow: hidden;
     position: relative;
-}
-
-#carousel {
-    width: 10000px;
-    position: relative;
-    top: 0;
 }
 
 .slider {
@@ -652,17 +572,12 @@ section .container {
     justify-content: center;
 }
 
-.blackjackSize {
-    width: 480px;
-    height: 270px;
-}
-
 .mdi {
     padding: 10px;
     font-size: 25px !important;
     position: absolute;
     cursor: pointer;
-    color: #fff;
+    color: $white;
     display: inline-block;
     font-style: normal;
     font-variant-ligatures: normal;
@@ -684,14 +599,6 @@ section .container {
     right: 0
 }
 
-div {
-    display: block;
-}
-
-
-
-
-
 
 /**
 * Carousel.sass
@@ -700,6 +607,7 @@ div {
 * @description: A Simple Carousel Pure CSS Using Sass
 * @version: 1.0.0
 */
+// Edited for use in this project
 %animation-default {
     opacity: 1 !important;
     z-index: 3;
@@ -885,7 +793,7 @@ div {
         z-index: 3;
 
     > label {
-        border: 1px solid #fff;
+        border: 1px solid $white;
         display: inline-block;
         border-radius: 50%;
         cursor: pointer;
@@ -912,18 +820,14 @@ body {
 
 .modal-body .container {
     width: 500px;
-    // min-width: 500px;
     height: 400px;
-    // margin-left: 0;
-    // margin-right: 0;
-    // padding-left: 0px;
-    // padding-right: 0px;
 }
 
 @include carousel(5);
 
 // ------------------ End Carousel CSS -----------------
 
+//----------------Skills Floating and Responsive---------------------
 .floating {  
     animation-name: floating;
     animation-duration: 4s;
@@ -1022,6 +926,7 @@ body {
     text-align: center;
 }
 
+//--------------Rotate Skills for style when in a larger screen--------------
 @media screen and (min-width: 550px) {
 
     .rotate-neg-15 {
@@ -1061,9 +966,10 @@ body {
         filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
     }
 }
+//----------------End Rotate Skills----------------------
+//------------------End Skills CSS-----------------------
 
-
-// --------------------------------Responsive----------------------------------
+// --------------------------------Fullpage Responsive----------------------------------
 
 @media screen and (max-width:1135px) {
     .fp-tableCell {
@@ -1177,7 +1083,9 @@ body {
         .mobile-show{display:none}
     }
 
-//-------------------------------------------------------
+//-----------------------End Fullpage Responsive--------------------------------
+
+//-----------------------Modals and Carousel Responsive-------------------------
 
 @media screen and (max-height: 750px) {
     .modal-body .container {
