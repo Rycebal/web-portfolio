@@ -612,7 +612,7 @@ section .container {
     opacity: 1 !important;
     z-index: 3;
 }
-  
+
 @mixin carousel($items, $animation: 'default') {
 .carousel {
     width: 500px;
@@ -823,7 +823,9 @@ body {
     height: 400px;
 }
 
+@include carousel(3);
 @include carousel(5);
+@include carousel(10);
 
 // ------------------ End Carousel CSS -----------------
 

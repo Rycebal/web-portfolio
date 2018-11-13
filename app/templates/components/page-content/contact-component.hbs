@@ -1,8 +1,11 @@
+{{#if showContact}}
 <div class="animated fadeInDown contact-container">
     <div class="contact-box">
         <form id="form-validation" method="post" action="sendEmail.php">
             <h2 class="contact-form-title">
-                Send me a message
+                {{!-- Send me a message --}}
+                Congrats! You found this form!
+                Testing purposes only at this time
             </h2>
 
             <div class="input-fields validate-input" data-validate="I'd like to know who's messaging me">
@@ -25,3 +28,6 @@
         </form>
     </div>
 </div>
+{{else}}
+<h2 class="animated fadeInRight" {{action 'toggleContact'}}>:)</h2>
+{{/if}}
